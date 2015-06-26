@@ -838,7 +838,7 @@ class Hello(object):
     y_g3 = y_g1 + rp_g1 + rp_g2
     # 第4齒輪的圓心座標, 假設排列成水平, 表示各齒輪圓心 y 座標相同
     x_g4 = x_g1+ rp_g2+rp_g3
-    y_g3= y_g1  + rp_g1 + rp_g2+ rp_g3
+    y_g4= y_g1  + rp_g1 + rp_g2+ rp_g3
 
 
 
