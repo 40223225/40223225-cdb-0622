@@ -890,6 +890,7 @@ class Hello(object):
     ctx.restore()
     ctx.font = "10px Verdana";
     ctx.fillText("組員40223225 張育軒所繪製",x_g1-60, y_g1-10)
+    ctx.fillText("組員40223225 張育軒所繪製",x_g3-60, y_g3-10)
     # 按照上面三個正齒輪的囓合轉角運算, 隨後的傳動齒輪轉角便可依此類推, 完成6個齒輪的囓合繪圖
 
     </script>
