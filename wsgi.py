@@ -744,7 +744,7 @@ class Hello(object):
     #@+node:2015.20150625175108.16: *3* mygeartest3
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
-    def mygeartest4(self, N=20, m=15, p=5,z=15,x=24,c=15,v=24,o=None,l=None):
+    def mygeartest3(self, N=20, m=15, p=5,z=15,x=24,c=15,v=24,o=None,l=None):
         outstring = '''
     <!DOCTYPE html> 
     <html>
@@ -757,7 +757,7 @@ class Hello(object):
     </head>
     <!-- 啟動 brython() -->
     <body onload="brython()">
-    <form method=POST action=mygeartest4>
+    <form method=POST action=mygeartest3>
     第1齒數:<br />
         <select name="z">
         '''
