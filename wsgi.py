@@ -773,14 +773,14 @@ class Hello(object):
         outstring+='''
        </select><br/>
     第3齒數:<br />
-        <select name="x">
+        <select name="c">
         '''
         for j in range(15,81):
             outstring+=''' <option value="'''+str(j)+'''">'''+str(j)+'''</option>'''
         outstring+='''
        </select><br/>
      第4齒數:<br />
-        <select name="x">
+        <select name="v">
         '''
         for j in range(15,81):
             outstring+=''' <option value="'''+str(j)+'''">'''+str(j)+'''</option>'''
@@ -870,23 +870,23 @@ class Hello(object):
     # 使用 ctx.save() 與 ctx.restore() 以確保各齒輪以相對座標進行旋轉繪圖
     ctx.save()
     # translate to the origin of second gear
-    ctx.translate(x_g1, y_g1)
+    ctx.translate(x_g3, y_g3)
     # rotate to engage
     ctx.rotate(-pi/2-pi/n_g3+(pi/2+pi/n_g2)*n_g2/n_g3)
     # put it back
-    ctx.translate(-x_g1, -y_g1)
-    spur.Spur(ctx).Gear(x_g1, y_g1, rp_g1, n_g1, pa, "blue")
+    ctx.translate(-x_g3, -y_g3)
+    spur.Spur(ctx).Gear(x_g3, y_g3, rp_g3, n_g3, pa, "blue")
     ctx.restore()
 
     # 將第4齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
     ctx.save()
     # translate to the origin of second gear
-    ctx.translate(x_g2, y_g2)
+    ctx.translate(x_g4, y_g4)
     # rotate to engage
     ctx.rotate(-pi/n_g4+(-pi/2+pi/n_g3)*n_g3/n_g4-(pi/2+pi/n_g2)*n_g2/n_g4)
     # put it back
-    ctx.translate(-x_g2, -y_g2)
-    spur.Spur(ctx).Gear(x_g2, y_g2, rp_g2, n_g2, pa, "black")
+    ctx.translate(-x_g4, -y_g4)
+    spur.Spur(ctx).Gear(x_g4, y_g4, rp_g4, n_g4, pa, "black")
     ctx.restore()
     ctx.font = "10px Verdana";
     ctx.fillText("組員40223225 張育軒所繪製",x_g1-60, y_g1-10)
